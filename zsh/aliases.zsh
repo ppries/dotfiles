@@ -30,7 +30,7 @@ alias cls='clear;ls'
 
 # Show human friendly numbers and colors
 alias df='df -h'
-alias du='du -h -d 2'
+#alias du='du -h -d 2'
 
 if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
@@ -211,3 +211,6 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
+
+# Make
+alias make='make -j$(nproc)'
