@@ -293,7 +293,7 @@ Assuming your host system has Docker & Docker Compose properly installed, run:
 This will build the container image it never built it before (which may take a while -- future times will be faster) and then run a `zsh` session inside that container for you.
 There you can play around, test commands, aliases, etc.
 
-*Warning*: this repo is primarly macOS oriented. So any support for Linux can only be done with the help of the community.
+*Warning*: this repo is primarly OSX oriented. So any support for Linux can only be done with the help of the community.
 
 
 ## Misc
@@ -331,7 +331,7 @@ brew uninstall vim
 rvm system do brew install vim --with-lua
 ```
 
-### [Pry](https://pryrepl.org/)
+### [Pry](http://pry.github.com/)
 
 Pry offers a much better out of the box IRB experience with colors, tab completion, and lots of other tricks. You can also use it
 as an actual debugger by installing [pry-nav](https://github.com/nixme/pry-nav).
