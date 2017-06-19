@@ -214,3 +214,5 @@ alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew 
 
 # Make
 alias make='make -j$(nproc)'
+
+alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
