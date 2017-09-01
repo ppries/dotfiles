@@ -214,4 +214,9 @@ alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew 
 
 # Make
 alias make='make -j$(nproc)'
+
+# Fixes ssh agent forwarding when using tmux on a remote server.
 alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
+
+# Short alias for attaching to tmux session.
+alias ta='tmux a -d'
