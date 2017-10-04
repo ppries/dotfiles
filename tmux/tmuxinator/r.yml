@@ -1,0 +1,30 @@
+# ~/.tmuxinator/flow.yml
+
+ name: remote
+ root: ~/projects/
+
+ windows:
+  - editor:
+      panes:
+        - vim
+  - shell:
+      layout: even-vertical
+      panes:
+        -
+  - gpus:
+      layout: even-vertical
+      panes:
+        - export CUDA_VISIBLE_DEVICES=0
+        - export CUDA_VISIBLE_DEVICES=1
+        - export CUDA_VISIBLE_DEVICES=2
+        - export CUDA_VISIBLE_DEVICES=3
+  - board:
+      layout: even-vertical
+      panes:
+        -
+        -
+  - watch:
+      layout: even-vertical
+      panes:
+        - watch -n 0.1 nvidia-smi
+        - htop
