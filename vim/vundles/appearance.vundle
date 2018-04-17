@@ -9,5 +9,5 @@ Bundle "chriskempson/base16-vim"
 " Required for Gblame in terminal vim
 Bundle "godlygeek/csapprox.git"
 
-# Indent guides
+" Indent guides
 Plugin 'Yggdroot/indentLine'

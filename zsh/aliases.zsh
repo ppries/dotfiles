@@ -220,3 +220,12 @@ alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
 
 # Short alias for attaching to tmux session.
 alias ta='tmux a -d'
+
+# conda
+alias .a='. activate'
+alias .d='. deactivate'
+alias .e='source activate $(sed -En "s/name:.([a-z_]*)/\1/p" environment.yml)'
+alias cu='conda update --all'
+alias ce='conda env'
+alias cue='conda env update -f environment.yml && sae'
+alias cex='conda env export -f environment.yml'
