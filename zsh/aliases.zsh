@@ -209,9 +209,6 @@ alias dbmr='spring rake db:migrate:redo'
 alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
-# Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
-
 # Make
 alias make='make -j$(nproc)'
 
@@ -229,3 +226,6 @@ alias cu='conda update --all'
 alias ce='conda env'
 alias cue='conda env update -f environment.yml && .e'
 alias cex='conda env export -f environment.yml'
+#
+# Homebrew
+alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
