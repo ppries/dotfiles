@@ -219,13 +219,13 @@ alias fixssh='eval $(tmux showenv -s SSH_AUTH_SOCK)'
 alias ta='tmux a -d'
 
 # conda
-alias .a='. activate'
-alias .d='. deactivate'
-alias .e='source activate $(sed -En "s/name:.([a-z_]*)/\1/p" environment.yml)'
+alias .a='conda activate'
+alias .d='conda deactivate'
+alias .e='conda activate $(sed -En "s/name:.([a-z_]*)/\1/p" environment.yml)'
 alias cu='conda update --all'
 alias ce='conda env'
 alias cue='conda env update -f environment.yml && .e'
-alias cex='conda env export -f environment.yml'
+alias cex='conda env export >! environment.yml'
 #
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
