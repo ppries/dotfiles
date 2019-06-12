@@ -126,7 +126,7 @@
 [include]
   path = .gitconfig.user
 [user]
-	email = philip@sportcaster.dk
+	email = ppries@pm.me
 	name = Philip Pries Henningsen
 [filter "lfs"]
 	clean = git-lfs clean -- %f
