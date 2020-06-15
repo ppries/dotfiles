@@ -52,12 +52,7 @@ alias ae='vim $yadr/zsh/aliases.zsh' #alias edit
 alias ar='source $yadr/zsh/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
-# vim using
-mvim --version > /dev/null 2>&1
-MACVIM_INSTALLED=$?
-if [ $MACVIM_INSTALLED -eq 0 ]; then
-  alias vim="mvim -v"
-fi
+alias vim='nvim'
 
 # mimic vim functions
 alias :q='exit'
@@ -229,3 +224,6 @@ alias cex='conda env export >! environment.yml'
 #
 # Homebrew
 alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+
+# tmuxinator
+alias mux='tmuxinator'
