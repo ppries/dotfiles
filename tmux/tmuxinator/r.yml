@@ -11,20 +11,18 @@
       layout: even-vertical
       panes:
         -
-  - gpus:
+  - trainings:
       layout: even-vertical
       panes:
-        - export CUDA_VISIBLE_DEVICES=0
-        - export CUDA_VISIBLE_DEVICES=1
-        - export CUDA_VISIBLE_DEVICES=2
-        - export CUDA_VISIBLE_DEVICES=3
-  - board:
+        - 
+        -
+  - webservers:
       layout: even-vertical
       panes:
         -
         -
   - watch:
-      layout: even-vertical
+      layout: even-horizontal
       panes:
         - watch -n 0.1 nvidia-smi
         - htop
