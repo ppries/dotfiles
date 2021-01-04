@@ -35,14 +35,14 @@
       root: ~/projects/
       layout: 141f,272x62,0,0{135x62,0,0,0,136x62,136,0[136x30,136,0,5,136x31,136,31,6]}
       panes:
-        - nvim
+        - vim
         - ipython
         -
   - shell:
       layout: even-vertical
       panes:
         -
-  - board:
+  - webservers:
       layout: even-vertical
       panes:
         -
